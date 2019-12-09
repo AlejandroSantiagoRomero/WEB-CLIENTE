@@ -1,0 +1,52 @@
+#logo{
+    width: 100px;
+}
+header{
+    background-color: #6CD20A;
+}
+#header2{
+    background-color: #6CD20A;
+}
+#footer{
+    margin: 0%;
+    background-color: #6CD20A;
+    padding: 0;
+}
+#article{
+    margin-bottom: 5px;
+}
+body#color{
+background-color: rgb(241, 236, 180);
+}
+#nav{
+    background-color: blue;
+}
+#btn2{
+    background-color: rgb(17, 16, 16);
+    color: white;
+}
+p {
+    font-size: 1.43em;
+    font-family: 'MTCORSVA.TTF';
+    text-align: center;
+}
+div.dropdown-menu{
+    background-color: rgb(60, 60, 189);
+}
+@font-face{
+    font-family:'MTCORSVA.TTF';
+    src: url(MTCORSVA.TTF) format('TTF');
+}
+#social img{
+    width: 40px;
+    height: 40px;
+}
+button#btn{
+    background-color: rgb(241, 236, 180);
+    border: solid;
+    border-color: blue;
+    border-radius: 5ex;
+}
+#hoverheader{
+    background-color: #6CD20A;
+}

@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="/CSS/hoja.css">
+        <script src="/JS/tarea.js"></script>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+                integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+                crossorigin="anonymous">
+</head>
+
+<body class="container-fluid" id="color">
+        <div class="row" id="hoverheader">
+                <div class="alert alert-success col-12 col-md12 col-lg-12" role="alert">
+                        El login esta en mantenimiento.
+                </div>
+        </div>
+        <header class="row">
+                <div class="col-6 col-lg-2 d-flex justify-content-center">
+                        <img src="/img/logo.png" class="" id="logo" alt="">
+
+                </div>
+                <div class="col-6 col-lg-6 d-flex justify-content-center align-self-center">
+                        <h2>Empresa Ejemplo Alejandro</h2>                        
+                </div>
+                <div class="col-lg-4 d-flex justify-content-start justify-content-center-lg align-self-center">
+                        <button type="button" class="btn btn-primary btn-lg">Inicio Sesion</button>
+                        <button id="btn2" type="button" class="btn btn-lg">Crear Cuenta</button>
+                </div>
+        </header>
+        <div id="header2" class="row d-none d-lg-flex"><div class="col-12 d-flex justify-content-center"><h4>Tienda</h4></div></div>
+        <nav id="nav" class="row d-none d-lg-flex navbar navbar-expand-lg" aria-label="breadcrumb">
+                <div class="col-lg-9">
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <div class="navbar-nav">
+                                        <a class="nav-item nav-link active" href="index.html">INICIO<span
+                                                        class="sr-only">(current)</span></a>
+                                        <a class="nav-item nav-link text-white" href="taller.html">Tienda</a>
+                                        <a class="nav-item nav-link text-white" href="#">En desarrollo</a>
+                                        <a class="nav-item nav-link disabled text-white-50" href="#" tabindex="-1"
+                                                aria-disabled="true">Disabled</a>
+                                </div>
+                        </div>
+                </div>
+                <div class="col-lg-3">
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <div class="navbar-nav">
+                                        <a id="llantas" class="nav-item nav-link active" onclick="alternar(document.getElementById('llantas'))" href="#">LLantas <span
+                                                        class="sr-only">(current)</span></a>
+                                        <a id="neumaticos" class="nav-item nav-link text-white" onclick="alternar(document.getElementById('neumaticos'))" href="#">Neumaticos</a>
+                                        <a id="otros" class="nav-item nav-link text-white" onclick="alternar(document.getElementById('otros'))" href="#">Otros</a>
+                                </div>
+                        </div>
+                </div>
+        </nav>
+        <nav id="nav" class="row d-flex justify-content-between d-lg-none navbar navbar-expand-lg">
+                <div class="col-10">
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                                <button id="llantas" type="button" class="btn btn-secondary" onclick="alternar(document.getElementById('llantas'))">LLantas</button>
+                                <button id="neumaticos" type="button" class="btn btn-secondary" onclick="alternar(document.getElementById('neumaticos'))">Neumaticos</button>
+                                <button id="otros" type="button" class="btn btn-secondary" onclick="alternar(document.getElementById('otros'))">Otros</button>
+                        </div>
+                </div>
+                <div class="dropdown col-2">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="img-fluid" src="/img/menubutton.png" width="64" alt="">
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                <a class="nav-item nav-link active" href="index.html">INICIO<span
+                                                class="sr-only">(current)</span></a>
+                                <a class="nav-item nav-link text-white" href="taller.html">Tienda</a>
+                                <a class="nav-item nav-link text-white" href="#">En desarrollo</a>
+                                <a class="nav-item nav-link disabled text-white-50" href="#" tabindex="-1"
+                                        aria-disabled="true">Disabled</a>
+                        </div>
+                </div>
+        </nav>
+        <section class="container-fluid">
+                <article class="row d-flex justify-content-center">
+                        <div class="col-12 col-md-6 col-lg-4">
+                                <div class="row">
+                                        <div class="col-lg-6 align-self-center d-flex justify-content-center"><img id="1" class="img-fluid" src="/img/llantas.png" alt="">
+                                        </div>
+                                        <div class="col-lg-6 align-self-center">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+                                                        culpa!</p>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                                <div class="row">
+                                        <div class="col-lg-6 align-self-center d-flex justify-content-center"><img id="2" class="img-fluid" src="/img/llantas.png" alt="">
+                                        </div>
+                                        <div class="col-lg-6 align-self-center">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+                                                        culpa!</p>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                                <div class="row">
+                                        <div class="col-lg-6 align-self-center d-flex justify-content-center"><img id="3" class="img-fluid" src="/img/llantas.png" alt="">
+                                        </div>
+                                        <div class="col-lg-6 align-self-center">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+                                                        culpa!</p>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                                <div class="row">
+                                        <div class="col-lg-6 align-self-center d-flex justify-content-center"><img id="4" class="img-fluid" src="/img/llantas.png" alt="">
+                                        </div>
+                                        <div class="col-lg-6 align-self-center">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+                                                        culpa!</p>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                                <div class="row">
+                                        <div class="col-lg-6 align-self-center d-flex justify-content-center"><img id="5" class="img-fluid" src="/img/llantas.png" alt="">
+                                        </div>
+                                        <div class="col-lg-6 align-self-center">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+                                                        culpa!</p>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                                <div class="row">
+                                        <div class="col-lg-6 align-self-center d-flex justify-content-center"><img id="6" class="img-fluid" src="/img/llantas.png" alt="">
+                                        </div>
+                                        <div class="col-lg-6 align-self-center">
+                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+                                                        culpa!</p>
+                                        </div>
+                                </div>
+                        </div>
+                </article>
+        </section>
+        <footer class="row">
+                <div id="footer" class="jumbotron jumbotron-fluid col-lg-12">
+                        <div class="container">
+                                <h5 class="display-4">Empresa Ejemplo</h5>
+                                <div id="social" class="btn-toolbar" role="toolbar"
+                                        aria-label="Toolbar with button groups">
+                                        <div class="btn-group" role="group" aria-label="Third group">
+                                                <button id="btn" type="button" class="btn"><img src="img/twitter.png"
+                                                                alt=""></button>
+                                        </div>
+                                        <div class="btn-group" role="group" aria-label="Third group">
+                                                <button id="btn" type="button" class="btn"><img src="img/facebook.png"
+                                                                alt=""></button>
+                                        </div>
+                                        <div class="btn-group" role="group" aria-label="Third group">
+                                                <button id="btn" type="button" class="btn"><img src="img/Instagram.png"
+                                                                alt=""></button>
+                                        </div>
+                                        <div class="btn-group" role="group" aria-label="Third group">
+                                                <button id="btn" type="button" class="btn"><img src="img/whatsapp.png"
+                                                                alt=""></button>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </footer>
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+                integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+                crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+                integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+                integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+                crossorigin="anonymous"></script>
+</body>
+
+</html>
